@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+HOMEWORK=${1?Error: no homework given};
+
+export HOMEWORK=$HOMEWORK
+export RESULTS_PATH=$HOMEWORK/results/results.json
+export BASE_DIR=$HOMEWORK/tests
+
+./compile_local.sh
+
+python3 run_tests.py
+
+cat $RESULTS_PATH
+
+# clean up
+while read question; do
+  rm -rf $HOMEWORK/$question/*
+done < $HOMEWORK/questions.txt
+
+
+
+

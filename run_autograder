@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+export RESULTS_PATH='/autograder/results/results.json'
+export BASE_DIR='/autograder/source/tests'
+
+cd /autograder/source
+
+bash ./compile.sh
+
+python3 run_tests.py
+
+cat $RESULTS_PATH

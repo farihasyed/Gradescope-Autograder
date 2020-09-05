@@ -129,5 +129,11 @@ dmypy.json
 .pyre/
 
 # Local files
-autograder_zip.sh
 setup_local.sh
+.idea/
+10/
+2/
+24-HW9/
+6
+7
+misc

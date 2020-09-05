@@ -7,7 +7,7 @@ Adapted from this Gradescope example: [Diff General](https://github.com/gradesco
 ###For each assignment:
 * Change `HOMEWORK` in [assignment_specific](assignment_specific.py) to reflect current assignment
 * Update [questions.txt](questions.txt) with questions in assignment
-* [tests](tests) with input and outputs for each question in [questions.txt](questions.txt)
+* Add to [tests](tests) with input and outputs for each question in [questions.txt](questions.txt)
 
 ###Execute
 ####Gradescope

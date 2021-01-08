@@ -52,8 +52,8 @@ class TestMetaclass(type):
             output, errors = process.communicate(stdin)
             expected_output = load_test_file('output')
             msg = settings.get('msg', "Output did not match expected")
-            no_space_output = re.sub(r'\s+', '', output)
-            no_space_expected_output = re.sub(r'\s+', '', expected_output)
+            no_space_output = re.sub(r'\s+', '', output.lower())
+            no_space_expected_output = re.sub(r'\s+', '', expected_output.lower())
             print(SEPARATOR.join([stdin, expected_output, output]))
             if HOMEWORK in APPLICABLE and int(question) in APPLICABLE[HOMEWORK]:
                 result = APPLICABLE[HOMEWORK][int(question)](test, output, expected_output, no_space_output, no_space_expected_output)

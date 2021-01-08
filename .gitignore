@@ -133,7 +133,10 @@ setup_local.sh
 .idea/
 10/
 2/
+3/
 24-HW9/
 6
 7
+tests
 misc
+assignment_specific.py
